@@ -1,0 +1,35 @@
+.facturation {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12%;
+  margin-top: 10%;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 42px;
+}
+.nom_complet {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: -30%;
+}
+body{
+  background-image: url("public/playground_assets/mahmoud-fawzy-sGPMqwj3N5M-unsplash.jpg") ;
+  backdrop-filter: blur(2px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+#confirmer{
+    
+  background: #a3979b;
+  top: 363px;
+  left: 934px;
+  width: 105px;
+  height: 30px;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 29.45008087158203px;
+}
+
