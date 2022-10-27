@@ -10,6 +10,81 @@
     <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"data-tag="font"/>
     <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&amp;display=swap"data-tag="font"/>
     <link href="./pagegall.css" rel="stylesheet" />
+    <style>
+      .facturation {
+        display: flex;
+        flex-direction: column;
+        margin-left: 12%;
+        margin-top: 10%;
+        font-family: 'Poppins',sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 42px;
+      }
+      .nom_complet {
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: -22%;
+      }
+      #confirmere{
+          
+        background: #a3979b;
+        top: 319px;
+        left: 809px;
+        width: 105px;
+        height: 30px;
+        position: absolute;
+        border-color: transparent;
+        border-radius: 29.45008087158203px;
+      }
+      .wrap{
+          max-width: 763px;
+          padding: 84px;
+          margin-left: 12%;
+    
+    margin-top: 2%;
+         background-image: url("./public/playground_assets/mahmoud-fawzy-sGPMqwj3N5M-unsplash.jpg") ;
+        backdrop-filter: blur(2px);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+      }
+      .openbtn{
+          
+          background: #CA738F;
+          top: 90px;
+          left: 129px;
+          width: 105px;
+          height: 25px;
+          position: absolute;
+          border-color: transparent;
+          border-radius: 29.45008087158203px;
+          cursor: pointer;
+      }
+      .overlay{
+          height: 100%;
+          width: 100%;
+          display: none;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+      
+      }
+      .closebtn{
+          position: absolute;
+          top: -5px;
+    right: 127px;
+          font-size: 60px;
+          cursor: pointer;
+          color: #db6e34;
+      
+      }
+      .closebtn:hover{
+          color:#ccc ;
+      }
+    </style>
   </head>
   <body>
     <div class="header">
@@ -210,7 +285,45 @@
         <span id="surimi"> <div>Surimi avocat</div><div style="margin-left:100px;">15.00$</div></span>
         <span id="saumon" style="margin-top:10px;"> <div>Saumon ramen</div><div style="margin-left:100px;">7.96$</div></span>
         <span id="saumon" style="margin-top:10px; margin-left: 250px;"> <div> total</div><div style="margin-left:100px;">22.96$</div></span>
-       <button id="confirmer"><a href="frame4.html" style="text-decoration:none; color:black;"><div style="text-align: center;font-family: Roboto;font-weight: 700;">confirm</div></a></button>
+       <div id="myOverlay" class="overlay">
+                    <span class="closebtn" onclick="document.getElementById('myOverlay').style.display = 'none'"  title="Close Overlay">&#215</span>
+                    <div class="wrap">
+                      <form>
+                          <div class="nom_complet">
+                              <div class="nom">
+                                  <label style="color:#ffffff;">NOM</label>
+                                  <br>
+                                  <input type="text" placeholder="" style="background-color: rgb(190 190 190 / 29%); ;border: 1px solid #000000;
+                                  box-shadow: 0px 4px 4px rgba(112, 112, 112, 0.49);width: 207px;height: 32px;"required >
+                               </div>
+                              <div class="prenom">
+                                  <label style="color:#ffffff;" >PRENOM</label>
+                                  <br>
+                                  <input type="text" placeholder=""style="background-color: rgb(190 190 190 / 29%);  ;border: 1px solid #000000;
+                                  box-shadow: 0px 4px 4px rgba(112, 112, 112, 0.49);width: 207px;height: 32px;" required >
+                              </div>
+                             
+                           </div>
+                          
+                          <div class="adresse">
+                              <label style="color:#ffffff;">ADRESSE</label>
+                              <br>
+                              <input type="text" placeholder="" style="background-color:rgb(190 190 190 / 29%);  ;border: 1px solid #000000;
+                              box-shadow: 0px 4px 4px rgba(112, 112, 112, 0.49);width: 763px;height: 32px;margin-top: 2%;"  required >
+                          </div>
+                        
+                          <div class="TELEPHONE" style=" margin-top: 2%;">  
+                              <label style="color:#ffffff;" >TELEPHONE</label>
+                              <br> 
+                              <input type="tel" placeholder="" style="background-color:rgb(190 190 190 / 29%);  ;border: 1px solid #000000;
+                              box-shadow: 0px 4px 4px rgba(112, 112, 112, 0.49);width: 763px;height: 32px;"required >
+                           </div>
+                           <button id="confirmere"><a href="" style="text-decoration:none; color:black;"><div style="text-align: center;font-family: Roboto;font-weight: 700;">confirm</div></a></button>
+                      </form> 
+                    </div>
+              </div>
+              <button type="submit" onclick="document.getElementById('myOverlay').style.display = 'block'" class="openbtn">confirm</button>
+            
       </div>
       </div>
       <div class="footer" style="margin-top: 1286px;">
