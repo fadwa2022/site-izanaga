@@ -1,267 +1,244 @@
-/*header*/
 .header{
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 380px;
-    display: flex;
-    position: absolute;
-    align-items: flex-start;
-    flex-shrink: 0;
-    border-color: transparent;
-  }
-  .select {
-    top: 0px;
-    left: -23px;
-    width: 1214px;
-    height: 142px;
-    position: absolute;
-  }
-  .logo {
-    top: -10px;
-    left: 1px;
-    width: 142px;
-    height: 142px;
-    position: absolute;
-  
-  }
-  .accueil{
-    top: -1px;
-    left: 712px;
-    position: absolute;
-    font-size: 17px;
-    font-family: Cinzel;
-    line-height: 39px;
-  }
-  .lacarte{
-    left: 857px;
-    top: -1px;
-    position: absolute;
-    font-size: 17px;
-    font-family: Cinzel;
-    line-height: 39px;
-  }
-  .Izanagi{
-    top: -1px;
-    left: 1003.174560546875px;
-    position: absolute;
-    font-size: 17px;
-    font-family: Cinzel;
-    line-height: 39px;
-  }
-  .contact{
-    right: 2px;
-    top: -1px;
-    position: absolute;
-    font-size: 17px;
-    font-family: Cinzel;
-    line-height: 39px;
-  }
-  .bgimg{
-    top: 90px;
-    left: -1px;
-    width: 1280Px;
-    height: 274px;
-    position: absolute;
-  
-  }
-  .text {
-    position: absolute;
-    top: 183px;
-    left: 536px;
-    color: rgba(255, 255, 255, 1);
-    font-size: 37px;
-    height: auto;
-    font-family: Cinzel;
-  }
-  .grbuttonexpo{
-    position: absolute;
-    left: 426px;
-    bottom: -21px;
-    height: 113px;
-  }
-  .EXPLORE_OUR_DELICOUS_MENU{
-    position: absolute;
-    top: -81px;
-    left: -9px;
-    color: rgb(245, 245, 245);
-    width: 390px;
-    font-size: 11px;
-    font-style: Bold;
-    text-align: center;
-    font-family: Roboto;
-    line-height: 50px;
-    
-  }
-  .textview {
-    top: -12px;
-    left: 90px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.select {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.menu{
+  width: 50%;
+  height: 0%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.accueil{
+  font-size: 100%;
+  font-family: Cinzel;
+}
+.bgimg{
+  margin-top: -3%;
+}
+.text {
+  position: absolute;
+  left: 42%;
+  top: 37%;
+  color: rgba(255, 255, 255, 1);
+  font-size: 228%;
+  font-family: Cinzel;
+}
+.grbuttonexpo{
+  position: absolute;
+  left: 42%;
+  bottom: 32%;
+}
+.EXPLORE_OUR_DELICOUS_MENU{
+  color: rgb(245, 245, 245);
+  font-size: 11px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Roboto;
+  line-height: 50px;
+}
+.textview {
     color: rgba(0, 0, 0, 0.8299999833106995);
-    position: absolute;
-    font-size: 11px;
-    font-family: Roboto;
     font-weight: 700;
-    line-height: 50px;
-  }
-  .accueil-button {
-    left:52px;
-    width: 211px;
-    bottom: 28px;
-    height: 51px;
-    position: absolute;
-  }
+    text-decoration: none;
+}
+.accueil-button {
+  margin-left: -26%;
+  height: 51px;
+
+}
+
   /*body*/
-  .bodypage{
-    width: 100%;
-    top: 426px;
-    left: 67px;
-    width: 674px;
-    height: 231px;
-    position: absolute;
-  }
-  .bgimag{
-    margin-left: -83px;
-    width: 1280px;
-    height: 417px;
-    position: absolute;
-    margin-top: -20px;
-  }
   .body{
+    background-image: url("public/playground_assets/alvapratta5todh34m0iunsplash1135-ofl-500h.png");
     display: flex;
     justify-content: space-around;
+    background-repeat: no-repeat;
   }
   .text2{
-    position:absolute;
     display:flex;
     flex-direction: column;
   }
-  #t{
-    width: 717px;
+  #t1{
+    text-align: center;
     font-size: 11px;
     font-style: ExtraBold;
-    text-align: center;
     font-family: Roboto;
-    font-weight: 800; }
-   .mapouter {
-    margin-left: 1200px;}
+    font-weight: 800;}
+.mapouter {
+     display: block;
+    margin-left: 20%;
+    margin-top: 2%;}
+
     .reseau{
-        margin-left: -205px;
+     width: 106%;
+    margin-left: 32%;
         display: flex;
         justify-content: space-around;
     }
     #t2{    
-    margin-top: 13px;
-    color: rgba(255, 255, 255, 1);
-    font-size: 11px;
-    font-style: ExtraBold;
-    text-align: center;
-    font-family: Roboto;
+      color: rgba(255, 255, 255, 1);
+      text-align: center;
+      font-size: 11px;
+      font-style: ExtraBold;
+      font-family: Roboto;
 
     }
-  /*footer*/
-.footer{
-    position: absolute;
-    top: 921px;
-    left: 0px;
-    width: 100%;
-
-    height: 191px;
-    background-color: rgba(0, 0, 0, 0.7599999904632568);
-  }
-  .div1 {
-    top: 30.476211547851562px;
-    left: 817.7777709960938px;
-    width: 389px;
-    height: 106.66666412353516px;
+    .follow{
+    color:rgba(201, 115, 142, 1); 
+    text-align: center;font-family: Roboto;
+    font-weight: 400;
+    line-height: 39px;
+    font-stretch: normal;
+    font-size: 18px;
+    }
+  .s{
     display: flex;
-    position: absolute;
-    align-items: flex-start;
-    flex-shrink: 0;
-    border-color: transparent;
+    flex-direction: column;
+    margin-top: -15%;
+
   }
-  .div1 span{
-    top: -2px;
-    left: -13px;
-    color: rgba(255, 255, 255, 1);
-    width: 388px;
-    position: absolute;
-    align-self: auto;
-    font-style: Regular;
-    font-family: Roboto;
-    text-align: center;
+  #twitter{
+    margin-left:-415px;
+  }
+/*footer*/
+.footer{
+  display: flex;
+   justify-content: space-around;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7599999904632568);
+}
+.div1 {
+  display:flex;
+  flex-direction: column;
+ 
+}
+#t{
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  font-family: Roboto;
+}
+.div1 p{
+  color: rgb(255, 255, 255);
+  width: 388px;
+  font-size: 9px;
+  text-align: center;
+  font-family: Roboto;
+}
+.div2 {
+  display:flex;
+  flex-direction: column;
+  margin-top: -1%;
+}
+.div2 p{
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  font-family: Roboto;
+
+}
+.horaire {
+  color: rgb(255, 255, 255);
+  font-size: 9px;
+  font-family: Roboto;
+  
+}
+.div3 {
+  display:flex;
+  flex-direction: column;
+  margin-top: -1%;
+}
+.div3 div{
+  color: rgba(255, 255, 255, 1);
+  font-size: 9px;
+  font-family: Roboto;
+  font-weight: 100;
+ 
+}
+.div3 p {
+  color: rgba(255, 255, 255, 1);
+  font-style: Regular;
+  font-family: Roboto;
+}
+  @media screen and (max-width: 680px) {
+    .accueil{
+      font-size: 10px;
+      font-family: Cinzel;
+      line-height: 39px;
+    }
+    .bgimg {
+      height: 300px;
+      width: 100%;
+    }
+    .grbuttonexpo{
+      position: absolute;
+      left: 42%;
+      bottom: 29%;
+    }
+    /*body*/
+    .body{
+      background-image: url("public/playground_assets/david-brooke-martin-lFTtQqVfx6g-unsplash-removebg-preview.png");
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      background-repeat: no-repeat;
+    }
+    
+    .mapouter {
+      display: none;
+    }
+    #t1{
+      font-size: 20px;
+    }
+    #t2{    
+      color: rgb(0, 0, 0);
+      text-align: center;
+      font-size: 20px;
+      font-style: ExtraBold;
+      font-family: Roboto;
+
+    }
+    .s{
+      margin-top: 100%;
+    }
+ .maps{
+  margin-top: -77%;
+ }
+ #twitter{
+  margin-left: -1300%;
+ }
+    /*foot*/
+  #t{
+    font-size: 10px; 
   }
   .div1 p{
-    top: 19px;
-    left: -8px;
-    color: rgb(255, 255, 255);
-    width: 388px;
-    position: absolute;
-    font-size: 9px;
+    width: 150px;
+    font-size: 7px;
     text-align: center;
     font-family: Roboto;
-    font-weight: 100;
-  }
-  .div2 {
-    top: 19.47092056274414px;
-    left: 418.2010498046875px;
-    width: 201px;
-    height: 117.67195892333984px;
-    display: flex;
-    position: absolute;
-    align-items: flex-start;
-    flex-shrink: 0;
-    border-color: transparent;
   }
   .div2 p{
-    left: 79px;
-    color: rgba(255, 255, 255, 1);
-    position: absolute;
-    text-align: center;
-    font-family: Roboto;
-  
+    font-size:10px;
   }
   .horaire {
-    left: 75px;
-    top: 40px;
-    color: rgb(255, 255, 255);
-    position: absolute;
-    font-size: 9px;
-    font-family: Roboto;
-    font-weight: 100;
+    width: 100px;
+    font-size: 7px;
     
   }
-  .accueil-text45 {
-    color: #ffffff;
-    font-size: 9.87936px;
-    font-family: Roboto;
-    font-weight: 100;
-    line-height: normal;
-    text-decoration: none;
-  }
-  .div3 {
-    top: 21px;
-    left: 93px;
-    width: 128px;
-    height: 128px;
-    position: absolute;
-  }
   .div3 div{
-    top: 40px;
-    left: 50px;
-    color: rgba(255, 255, 255, 1);
-    position: absolute;
-    font-size: 9px;
-    font-family: Roboto;
-    font-weight: 100;
-   
-   
+    width: 100px;
+    font-size: 7px;
   }
-  .div3 span {
-    width: 200px;
-    color: rgba(255, 255, 255, 1);
-    position: absolute;
-    font-style: Regular;
-    font-family: Roboto;
+  .div3 p {
+    font-size:10px;
   }
-  
+  }
   
