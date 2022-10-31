@@ -1,7 +1,21 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 .header{
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+.hero{
+  display: flex;
+  flex-direction: column;
+}
+.body_page{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .select {
   display: flex;
@@ -9,6 +23,26 @@
   justify-content: space-between;
   width: 100%;
 }
+ .choixplat{
+  width: 50%;
+  height: 20%;
+  padding-bottom: 3%;
+ }
+ select {
+  background: linear-gradient(180deg, #925d78 0%, #2f2d2e 100%);
+  font-size: 1em;
+  padding: 24px 271px;
+  margin-left: 51%;
+
+}
+ .choixplat option{
+  color:#B98A99;
+  font-size: 100%;
+  font-family: Cinzel;
+  margin-top: -15%;
+
+ }
+ 
 .menu{
   width: 50%;
   height: 0%;
@@ -26,17 +60,26 @@
   margin-top: -3%;
 }
 .text {
-  position: absolute;
-  left: 42%;
-  top: 37%;
+  text-align: center;
   color: rgba(255, 255, 255, 1);
   font-size: 228%;
   font-family: Cinzel;
+  margin-top: -15%;
 }
 .grbuttonexpo{
-  position: absolute;
-  left: 42%;
-  bottom: 32%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+}
+#button{
+  background-color: #D9D9D9; 
+ border-radius:8.65261px;
+ width: 211px;
+ height: 30px;
+ border-color: #D9D9D9;
+ margin-left: 23%;
+
 }
 .EXPLORE_OUR_DELICOUS_MENU{
   color: rgb(245, 245, 245);
@@ -61,36 +104,47 @@
 /*BODY*/
 .body_page{
   display: flex;
+  justify-content: space-around;
   flex-direction: column;
 }
 /*prod1*/
 
-.barre span{
-    align-items: center;
-    top: 420px;
-    left: 566px;
-    color: rgba(201, 115, 142, 1);
-    position: absolute;
-    font-size: 36px;
-    font-family: Cinzel;
-    font-weight: 700;
-    line-height: 18px;
-}
+
 .bgblack{
-  width: 100%;
+  align-items: center;
+  color: rgba(201, 115, 142, 1);
+  font-size: 36px;
+  font-family: Cinzel;
+  font-weight: 700;
+  line-height: 18px;
+  background-image: url("public/playground_assets/rectangle31195-hxe-200h.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 58px;
+
+}
+.bgblack p{
+  margin-left: 44%;
+  margin-top: 2%;
+}
+.prod{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1%;
 }
 .products{
     display: flex;
+    
     justify-content: space-around;
 }
-.prod{
-    display: flex;
-    flex-direction: column-reverse;
-}
+
 .detailsprod{
   margin-top: 20px;
 }
 .prix{
+  margin-top: 10%;
     background-color: #B98A99;
     top: 20px;
     height: 12px;
@@ -151,58 +205,81 @@
     display: flex;
     justify-content: space-around;
 }
+.buttonfilter{
+  background-color: #D9D9D9;
+  border-radius: 8.65261px;
+  width: 145px;
+  height: 30px;
+  border-color: #D9D9D9;
+  margin-left: 87%;
+  margin-top: 2%;
+}
+.buttonfilter:hover {
+  background-color: #2322229c;
+  color: white;
+}
 /*calcule*/
-.rect{ 
-    margin-top: 104px;
-    margin-left: 250px;
+.js{
+  display: flex;}
+.calcul{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url("./public/playground_assets/rectangle51199-a8v-700w.png");
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
 #mybag{
-    position: absolute;
-    margin-top: 21px;
-    margin-left: -622px;
+  
+  margin-left: 13%;
+  margin-top: 6%;
     color: rgba(0, 0, 0, 1);
     font-family: Cinzel Decorative;
     font-weight: 700;
-    padding: 100px;
+ 
 }
 .imag1{
-    width: 502px;
-    height: 314px;
-    position: absolute;
-    top: 1667px;
-    LEFT: -93px;
+ 
+  width: 250px;
+  height: 250px;
     
 }
-.img2{
-  display: none;
-    width: 502px;
-    height: 314px;
-    position: absolute;
-    top: 1560px;
-    LEFT: 650px;
+.img2 {
+ 
+  width: 250px;
+  height: 250px;
 }
 .bag{
-    position: absolute;
-    margin-left: 404px;
-    margin-top: -132px;
+  width: 47%;
+  margin-left: 25%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
-#surimi{
+.mamenu{
+  overflow-y: auto;
+    height: 100px;
+    width: 340px;
+}
+.surimi{
+    width: 340px;
     display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
 }
 #saumon{
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 #confirmer{
     
     background: #CA738F;
-    top: 90px;
-    left: 129px;
     width: 105px;
     height: 25px;
-    position: absolute;
+   
     border-color: transparent;
     border-radius: 29.45008087158203px;
 }
@@ -271,15 +348,44 @@
       line-height: 39px;
     }
     .bgimg {
-      height: 300px;
+      height:158px;
       width: 100%;
     }
-    .grbuttonexpo{
-      position: absolute;
-      left: 42%;
-      bottom: 29%;
-    }
+  .text {
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    font-size: 174%;
+    font-family: Cinzel;
+    margin-top: -25%;
+}    
+.EXPLORE_OUR_DELICOUS_MENU {
+  color: rgb(245, 245, 245);
+  font-size: 6px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Roboto;
+  line-height: 21px;
+}
+#button{
+  width: 148px;
+}
+
     /*body*/
+    select {
+      background: linear-gradient(180deg, #925d78 0%, #2f2d2e 100%);
+      font-size: 1em;
+      padding: 2px 111px;
+      margin-left: 38%;
+  }
+  
+.buttonfilter {
+  background-color: #D9D9D9;
+  border-radius: 8.65261px;
+  width: 63px;
+  height: 30px;
+  border-color: #D9D9D9;
+  margin-left: 165%;
+  margin-top: 0%;}
     .products,.products2,.products3{
       display: flex;
       flex-direction: column;
@@ -319,7 +425,10 @@
     margin-top: 2%;
   }
   .barre3 span{
-    margin-top: 350%;
+
+      margin-top: 348%;
+      margin-left: -77%;
+  
   }
   .barre2 span{
     margin-top: 2%;
@@ -327,20 +436,10 @@
     .imag1,.img2{
       display: none;
     }
-    .rect {
-      margin-top: 91px;
-      margin-left: 84px;
-      width: 70%;
-  }
-  .bag {
-    margin-left: 109px;
-    margin-top: -80px;
-    height: 10%;
-  }
-  .openbtn{   
-     top: 60px;
-    left: 218px;
-    width: 73px;
-    height: 25px;}
+
+ 
+
+
+ 
 
   }
