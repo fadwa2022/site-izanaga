@@ -235,8 +235,9 @@ body{
 }
 #mybag{
   
-  margin-left: 13%;
-  margin-top: 6%;
+  margin-left: 26%;
+    margin-top: 2%;
+    padding: 1%;
     color: rgba(0, 0, 0, 1);
     font-family: Cinzel Decorative;
     font-weight: 700;
