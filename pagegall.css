@@ -243,13 +243,13 @@ body{
  
 }
 .imag1{
- 
+ display:none;
   width: 250px;
   height: 250px;
     
 }
 .img2 {
- 
+  display:none;
   width: 250px;
   height: 250px;
 }
@@ -443,5 +443,4 @@ body{
       margin-top: 5%;
 }
 
-  
   }
