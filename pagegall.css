@@ -3,6 +3,9 @@ body{
   flex-direction: column;
   justify-content: space-around;
 }
+#burger{
+  display: none;
+}
 .header{
   width: 100%;
   display: flex;
@@ -44,7 +47,7 @@ body{
  }
  
 .menu{
-  width: 50%;
+  width: 56%;
   height: 0%;
   display: flex;
   flex-direction: row;
@@ -436,10 +439,9 @@ body{
     .imag1,.img2{
       display: none;
     }
+    .choixplat{
+      margin-top: 5%;
+}
 
- 
-
-
- 
-
+  
   }
